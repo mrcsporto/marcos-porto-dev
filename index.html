@@ -24,14 +24,27 @@
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&amp;family=Roboto:wght@300;400;500;700&amp;display=swap" media="print" onload="this.media='all'"/>
     <link href="css/font-awesome/css/all.min.css?ver=1.2.0" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css" integrity="sha512-Cdvnk1SFWqcb3An6gMyqDRH40Js8qmsWcSK10I2gSifCe2LilaPMsHd6DldEvQ3uIlCb1qdRUrNeAFFleOu4xQ==" crossorigin="anonymous" referrerpolicy="no-referrer" rel="stylesheet"/>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.css" integrity="sha512-VS1RXkzMIU86cRtBiX+9bJf91xFfORQeKg3dq9LwJO4ZsQ+tg427we+xLTKUcHMytW9ZzUpMc8Hje3sKEFqekA==" crossorigin="anonymous" referrerpolicy="no-referrer" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css" rel="stylesheet" >
     <link href="css/bootstrap.min.css?ver=1.2.0" rel="stylesheet">
     <link href="css/aos.css?ver=1.2.0" rel="stylesheet">
     <link href="css/main.css?ver=1.2.0" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   </head>
   <body id="top" class="p-3">
+    <header class="d-print-none">
+      <div class="container text-center text-lg-left">
+        <div class="py-1 clearfix">
+          <div class="site-nav">
+            <select class="selectpicker"  data-width="fit" alt="languages">
+              <option  data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
+              <option data-content='<span class="flag-icon flag-icon-br"></span> Português'>Português</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </header>
     <div class="page-content">
       <div class="container">
         <div class="cover shadow-lg bg-white">
@@ -63,7 +76,7 @@
                 <div class="avatar hover-effect bg-white shadow-sm p-1" data-aos="fade-left" data-aos-delay="200"><img src="images/avatar.jpg" width="200" height="200"/></div>
               </div>
               <div class="col-lg-8 col-md-7 text-center text-md-start">
-                <h2 class="h1 mt-2" data-aos="fade-left" data-aos-delay="0">Marcos Porto</h2>
+                <h1 class="h1 mt-2 " data-aos="fade-left" data-aos-delay="0">Marcos Porto</h1>
                 <p class="mb-0" data-aos="fade-left" data-aos-delay="100">Junior Software Engineer</p>
                 <p data-aos="fade-left" data-aos-delay="100"> <strong class="text-info"><em class="fab fa-react"></em> React</strong><span class="text-muted">  |  </span><strong class="text-ruby"><em class="icon-ruby-on-rails"></em>Ruby on Rails</strong> </p>
                 <div class="d-print-none" data-aos="fade-left" data-aos-delay="200">
@@ -341,5 +354,12 @@
     <script src="scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
     <script src="scripts/aos.js?ver=1.2.0"></script>
     <script src="scripts/main.js?ver=1.2.0"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>`
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/js/bootstrap-select.min.js"></script>
+    <script>
+        $(function(){
+            $('.selectpicker').selectpicker();
+        });
+    </script>
   </body>
 </html>
