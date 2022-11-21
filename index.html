@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<html lang="en pt" prefix="og: http://ogp.me/ns#">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,10 +26,11 @@
     <link href="css/font-awesome/css/all.min.css?ver=1.2.0" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css" rel="stylesheet"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.css" rel="stylesheet"/>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css" rel="stylesheet" >
     <link href="css/bootstrap.min.css?ver=1.2.0" rel="stylesheet">
     <link href="css/aos.css?ver=1.2.0" rel="stylesheet">
     <link href="css/main.css?ver=1.2.0" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   </head>
   <body id="top" class="p-3">
@@ -37,10 +38,10 @@
       <div class="container text-center text-lg-left">
         <div class="py-1 clearfix">
           <div class="site-nav">
-            <select class="selectpicker"  data-width="fit" alt="languages">
-              <option  data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
-              <option data-content='<span class="flag-icon flag-icon-br"></span> Português'>Português</option>
-            </select>
+              <select id="switch-lang" class="form-select">
+                <option value="en">🇺🇸 English</option>
+                <option value="pt">🇧🇷 Portuguese</option>
+              </select>        
           </div>
         </div>
       </div>
@@ -77,7 +78,8 @@
               </div>
               <div class="col-lg-8 col-md-7 text-center text-md-start">
                 <h1 class="h1 mt-2 " data-aos="fade-left" data-aos-delay="0">Marcos Porto</h1>
-                <p class="mb-0" data-aos="fade-left" data-aos-delay="100">Junior Software Engineer</p>
+                <p class="mb-0" data-aos="fade-left" data-aos-delay="100" lang="en">Junior Software Engineer</p>
+                <p class="mb-0" data-aos="fade-left" data-aos-delay="100" lang="pt">Engenheiro de Software Júnior</p>
                 <p data-aos="fade-left" data-aos-delay="100"> <strong class="text-info"><em class="fab fa-react"></em> React</strong><span class="text-muted">  |  </span><strong class="text-ruby"><em class="icon-ruby-on-rails"></em>Ruby on Rails</strong> </p>
                 <div class="d-print-none" data-aos="fade-left" data-aos-delay="200">
                   <a class="btn btn-light text-dark shadow-sm mt-1 me-1" href="public/marcos-porto-resume.pdf" target="_blank">Download CV</a>
@@ -88,14 +90,20 @@
           <div class="about-section pt-4 px-3 px-lg-4 mt-1">
             <div class="row">
               <div class="col-md-6">
-                <h2 class="h3 mb-3">About Me</h2>
-                <p>Hello! I'm Marcos 🖖 I worked for about 8 years as a Production Engineer in business administration, however, currently I've been dedicating myself to completing the career transition to software development. 
-                  As a result, I've reached great front-end skills and lately on Ruby on Rails, which I'm really enjoying. Finally, I'm a person motivated by new challenges, able to work autonomously, and quickly grasp new concepts.</p>
+                <h2 class="h3 mb-3" lang="en">About Me</h2>
+                <h2 class="h3 mb-3" lang="pt">Sobre mim</h2>
+                <p lang="en">Hello! I'm Marcos 🖖 I worked for about 8 years as a Production Engineer in business administration, however, currently I've been dedicating myself to completing the career transition to software development. 
+                  As a result, I've reached great front-end skills and lately on Ruby on Rails, which I'm really enjoying. Finally, I'm a person motivated by new challenges, able to work autonomously, and quickly grasp new concepts.
+                </p>
+                <p lang="pt">Olá! Eu sou o Marcos 🖖 Trabalhei por cerca de 8 anos como Engenheiro de Produção na administração de empresas, porém, atualmente venho me dedicando para realizar uma transição de carreira para desenvolvimento 
+                  de software. E como resultado, desenvolvi habilidades de Front-end e ultimamente em Ruby on Rails, que estou gostando muito. Por fim, sou uma pessoa motivada por novos desafios, capaz de trabalhar de forma autónoma e de apreender rapidamente novos conceitos.
+                </p>
               </div>
               <div class="col-md-5 offset-md-1">
                 <div class="row mt-2">
                   <div class="col-sm-4">
-                    <div class="pb-1">Age</div>
+                    <div class="pb-1" lang="en">Age</div>
+                    <div class="pb-1" lang="pt">Idade</div>
                   </div>
                   <div class="col-sm-8">
                     <div class="pb-1 text-secondary">33</div>
@@ -113,7 +121,8 @@
                     <div class="pb-1 text-secondary"><a class= "text-underline-hover" href="https://api.whatsapp.com/send/?phone=5585997523466">+55 (85) 99752-3466</a></div>
                   </div>
                   <div class="col-sm-4">
-                    <div class="pb-1">Address</div>
+                    <div class="pb-1" lang="en">Address</div>
+                    <div class="pb-1" lang="pt">Endereço</div>
                   </div>
                   <div class="col-sm-8">
                     <div class="pb-1 text-secondary">Fortaleza, Ceará, Brazil</div>
@@ -124,7 +133,8 @@
           </div>
           <hr class="d-print-none"/>
           <div class="skills-section px-3 px-lg-4">
-            <h2 class="h3 mb-3">Professional Skills</h2>
+            <h2 class="h3 mb-3" lang="en">Professional Skills</h2>
+            <h2 class="h3 mb-3" lang="pt">Habilidades Profissionais</h2>
             <div class="row">
               <div class="col-md-6">
                 <div class="mb-2">
@@ -229,33 +239,44 @@
                         </div>
                       </div>
                     </div>
-                    <a class="text-dark text-underline-hover site-nav mt-1" href="https://github.com/mrcsporto">See More &RightArrow; </a>
+                    <a class="text-dark text-underline-hover site-nav mt-1" href="https://github.com/mrcsporto" lang="en">See More &RightArrow; </a>
+                    <a class="text-dark text-underline-hover site-nav mt-1" href="https://github.com/mrcsporto" lang="pt">Veja Mais &RightArrow; </a>
                   </div>
                 </div>
               </div>
               <hr class="d-print-none"/>
               <div class="work-experience-section px-3 px-lg-4">
-                <h2 class="h3 mb-3">Work Experience</h2>
+                <h2 class="h3 mb-3" lang="en">Work Experience</h2>
+                <h2 class="h3 mb-3" lang="pt">Experiências Profissionais</h2>
                 <div class="timeline">
                   <div class="timeline-card timeline-card-primary card shadow-sm">
                     <div class="card-body" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-                      <div class="h5 mb-1">Procurement Buyer <span class="text-muted h6">at <a class="text-muted text-underline-hover" href="https://www.gocase.com.br/">Gocase</a></span></div>
-                      <div class="text-muted text-small mb-2">Apr 2020 - Nov 2022</div>
-                      <div>I started the purchasing department. From hiring people, standardizing processes, developing KPIs, and also managing OKRs.</div>
+                      <div class="h5 mb-1" lang="en">Procurement Buyer <span class="text-muted h6">at <a class="text-muted text-underline-hover" href="https://www.gocase.com.br/">Gocase</a></span></div>
+                      <div class="h5 mb-1" lang="pt">Comprador Pleno <span class="text-muted h6">na <a class="text-muted text-underline-hover" href="https://www.gocase.com.br/">Gocase</a></span></div>
+                      <div class="text-muted text-small mb-2" lang="en">Apr 2020 - Nov 2022</div>
+                      <div class="text-muted text-small mb-2" lang="pt">Abr 2020 - Nov 2022</div>
+                      <div lang="en">I started the purchasing department. From hiring people, standardizing processes, developing KPIs, and also managing OKRs.</div>
+                      <div lang="pt">Desenvolvi o departamento de compras. Desde a contratação de pessoas, padronização de processos, definição de KPIs e também gerenciamento de OKRs.</div>
                     </div>
                   </div>
                   <div class="timeline-card timeline-card-primary card shadow-sm">
                     <div class="card-body"data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-                      <div class="h5 mb-1">Process Engineer <span class="text-muted h6">at <a class="text-muted text-underline-hover" href="https://www.bosch.pt/a-nossa-empresa/bosch-em-portugal/aveiro/">Bosch Portugal</a></span></div>
-                      <div class="text-muted text-small mb-2">Apr 2019 - April 2020</div>
-                      <div>I was responsible to optimize the manufacturing processes, manage production capacity, and line balancing. And also build BI dashboards.</div>
+                      <div class="h5 mb-1" lang="en">Process Engineer <span class="text-muted h6">at <a class="text-muted text-underline-hover" href="https://www.bosch.pt/a-nossa-empresa/bosch-em-portugal/aveiro/">Bosch Portugal</a></span></div>
+                      <div class="h5 mb-1" lang="pt">Engenheiro de Processo <span class="text-muted h6">na <a class="text-muted text-underline-hover" href="https://www.bosch.pt/a-nossa-empresa/bosch-em-portugal/aveiro/">Bosch Portugal</a></span></div>
+                      <div class="text-muted text-small mb-2" lang="en">Apr 2019 - Apr 2020</div>
+                      <div class="text-muted text-small mb-2" lang="pt">Abr 2019 - Abr 2020</div>
+                      <div lang="en">I was responsible to optimize the manufacturing processes, manage production capacity, line balancing and also build dashboards in Power BI.</div>
+                      <div lang="pt">Fui responsável por otimizar os processos fabris, gerenciar capacidade de produção, balanceamento de linha e também construir dashboards em Power BI.</div>
                     </div>
                   </div>
                   <div class="timeline-card timeline-card-primary card shadow-sm">
                     <div class="card-body"data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
-                      <div class="h5 mb-1">Operation Manager <span class="text-muted h6">at <a class="text-muted text-underline-hover" href="https://www.normatel.com.br/"> Normatel Home Center</a></span></div>
-                      <div class="text-muted text-small mb-2">Apr 2015 - Dec 2018</div>
-                      <div>I was responsible for managing, teams, processes, policies, KPIs, pricing strategy, inventory, contracts, and registrations. I also managed IT projects with an emphasis on the business model in SAP.</div>
+                      <div class="h5 mb-1" lang="en">Operation Manager <span class="text-muted h6">at <a class="text-muted text-underline-hover" href="https://www.normatel.com.br/"> Normatel Home Center</a></span></div>
+                      <div class="h5 mb-1" lang="pt">Gerente de Operações <span class="text-muted h6">na <a class="text-muted text-underline-hover" href="https://www.normatel.com.br/"> Normatel Home Center</a></span></div>
+                      <div class="text-muted text-small mb-2" lang="en">Apr 2015 - Dec 2018</div>
+                      <div class="text-muted text-small mb-2" lang="pt">Abr 2015 - Dez 2018</div>
+                      <div lang="en">I was responsible for managing, teams, processes, policies, KPIs, pricing strategy, inventory, contracts, and registrations. I also managed IT projects with an emphasis on the business model in SAP ERP.</div>
+                      <div lang="pt">Fui responsável pela gestão de equipes, processos, políticas, KPIs, estratégia de preços, estoque, contratos e cadastros. Também gerenciei projetos de TI com ênfase no modelo de negócios em SAP ERP.</div>
                     </div>
                   </div>
                 </div>
@@ -263,21 +284,29 @@
               <hr class="d-print-none"/>
               <div class="page-break"></div>
               <div class="education-section px-3 px-lg-4 pb-4">
-                <div class="h3 mb-3">Education</div>
+                <div class="h3 mb-3" lang="en">Education</div>
+                <div class="h3 mb-3" lang="pt">Educação</div>
                 <div class="card mb-3 overflow-hidden">
                   <div class="row">
                     <div class="col-md-3 bg-custom" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
                       <div class="card-body cc-education-header">
                         <p>2022 - 2023</p>
-                        <div class="h5">Technical Course</div>
+                        <h5 lang="en">Technical Course</h5>
+                        <h5 lang="pt">Curso Técnico</h5>
                       </div>
                     </div>
                     <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
                       <div class="card-body">
-                        <div class="h5">Full Stack development</div>
-                        <p class="category"><span><a class="text-muted text-underline-hover" href="https://digitalcollege.com.br/formacao-full-stack/">Digital College</a></span></p>
-                        <p>Web programming concepts and fundamentals, programming logic and algorithms, Git and Github. Frontend in Javascript, HTML, 
-                          CCS and React. Backend development in Node.js, Express.js and MySQL. System operation with DevOps, Cloud Infrastructure, and deployment.</p>
+                        <h5 lang="en">Full Stack development</h5>
+                        <h5 lang="pt">Desenvolvimento Full Stack</h5>
+                        <p class="category"><span><a class="text-muted text-underline-hover" href="https://digitalcollege.com.br/formacao-full-stack/" lang="en">Digital College</a></span></p>
+                        <p class="category"><span><a class="text-muted text-underline-hover" href="https://digitalcollege.com.br/formacao-full-stack/" lang="pt">Digital College</a></span></p>
+                        <p lang="en">Web programming concepts and fundamentals, programming logic and algorithms, Git and Github. Frontend in Javascript, HTML, 
+                          CCS and React. Backend development in Node.js, Express.js and MySQL. System operation with DevOps, Cloud Infrastructure, and deployment.
+                        </p>
+                        <p lang="pt">Conceitos e fundamentos de programação Web, lógica de programação e algoritmos, Git e Github. Frontend em Javascript, HTML, 
+                          CCS e React. Desenvolvimento back-end em Node.js, Express.js e MySQL. Operação do sistema com DevOps, Cloud Infraestrutura e implantação.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -287,14 +316,18 @@
                     <div class="col-md-3 bg-custom" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
                       <div class="card-body cc-education-header">
                         <p>2019 - 2020</p>
-                        <div class="h5">Master's Degree</div>
+                        <h5 lang="en">Master's Degree</h5>
+                        <h5 lang="pt">Pós-Graduação</h5>
                       </div>
                     </div>
                     <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
                       <div class="card-body">
-                        <div class="h5">Master of Operation Management</div>
-                        <p class="category"><span><a class="text-muted text-underline-hover" href="https://www.pbs.up.pt/">Porto Business School - University of Porto</a></span></p>
-                        <p>Analyze, design, and implement production systems aimed at maximizing value and ensuring they are aligned with the organization's strategy.</p>
+                        <h5 lang="en">Master of Operation Management</h5>
+                        <h5 lang="pt">Gestão de Operações</h5>
+                        <p class="category"><span><a class="text-muted text-underline-hover" href="https://www.pbs.up.pt/" lang="en">Porto Business School - University of Porto</a></span></p>
+                        <p class="category"><span><a class="text-muted text-underline-hover" href="https://www.pbs.up.pt/" lang="pt">Porto Business School - Universidade do Porto</a></span></p>
+                        <p lang="en">Analyze, design, and implement production systems aimed at maximizing value and ensuring they are aligned with the organization's strategy.</p>
+                        <p lang="pt">Analisar, projetar e implementar sistemas de produção visando maximizar valor e garantir que estejam alinhados com a estratégia da organização.</p>
                       </div>
                     </div>
                   </div>
@@ -304,14 +337,18 @@
                     <div class="col-md-3 bg-custom" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
                       <div class="card-body cc-education-header">
                         <p>2013 - 2018</p>
-                        <div class="h5">Bachelor's Degree</div>
+                        <h5 lang="en">Bachelor's Degree</h5>
+                        <h5 lang="pt">Graduação</h5>
                       </div>
                     </div>
                     <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
                       <div class="card-body">
-                        <div class="h5">Bachelor of Production Engineer</div>
-                        <p class="category"><span><a class="text-muted text-underline-hover" href="https://www.unifor.br/">University of Fortaleza</a></span></p>
-                        <p>Design, implement, improve and maintain production systems with a systemic approach in order to deal with integrated systems, equipment, technologies, and products.</p>
+                        <h5 class="h5" lang="en">Bachelor of Production Engineer</h5>
+                        <h5 class="h5" lang="pt">Engenharia de Produção</h5>
+                        <p class="category"><span><a class="text-muted text-underline-hover" href="https://www.unifor.br/" lang="en">University of Fortaleza</a></span></p>
+                        <p class="category"><span><a class="text-muted text-underline-hover" href="https://www.unifor.br/" lang="pt">Universidade de Fortaleza</a></span></p>
+                        <p lang="en">Design, implement, improve and maintain production systems with a systemic approach in order to deal with integrated systems, equipment, technologies, and products.</p>
+                        <p lang="pt">Projetar, implementar, melhorar e manter sistemas de produção com abordagem sistêmica para lidar com sistemas, equipamentos, tecnologias e produtos integrados.</p>
                       </div>
                     </div>
                   </div>
@@ -346,7 +383,8 @@
           </div>
         </div>
         <div class="text-small">
-          <div class="mb-1">&copy; Marcos Porto. <br> All rights reserved.</div>
+          <div class="mb-1" lang="en">&copy; Marcos Porto. <br> All rights reserved.</div>
+          <div class="mb-1" lang="pt">&copy; Marcos Porto. <br> Todos os direitos reservados.</div>
         </div>
       </div>
     </footer>
@@ -354,12 +392,15 @@
     <script src="scripts/bootstrap.bundle.min.js?ver=1.2.0"></script>
     <script src="scripts/aos.js?ver=1.2.0"></script>
     <script src="scripts/main.js?ver=1.2.0"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>`
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/js/bootstrap-select.min.js"></script>
+    <script src="scripts/lang.js"></script>
+
     <script>
-        $(function(){
-            $('.selectpicker').selectpicker();
-        });
+      $('[lang="pt"]').hide();
+
+      $('#switch-lang').change(function() {
+        $('[lang="pt"]').toggle();
+        $('[lang="en"]').toggle();
+      });
     </script>
   </body>
 </html>

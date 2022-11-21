@@ -113,7 +113,7 @@ html {
 }
 
 .cover-bg {
-  background-color: rgba(11, 43, 76, 0.85);
+  background-color: rgba(11, 43, 76, 0.90);
   border-radius: 10px 10px 0 0;
 }
 
@@ -358,7 +358,7 @@ footer a:not(.nav-link) {
 }
 
 .bg-skills {
-  background-color: rgba(11, 43, 76, 0.75);
+  background-color: rgba(11, 43, 76, 0.85);
 }
 
 .text-underline-hover {
@@ -395,4 +395,11 @@ footer a:not(.nav-link) {
 
 .icon-git {
   color: #f34f29;
+}
+
+.form-select {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background-color: transparent;
 }
