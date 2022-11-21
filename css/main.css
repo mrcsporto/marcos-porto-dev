@@ -404,6 +404,7 @@ footer a:not(.nav-link) {
   background-color: transparent;
   background-image: none;
   padding: 0;
+  right: 0;
 }
 
 .form-floating>label {
