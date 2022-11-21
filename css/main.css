@@ -402,4 +402,14 @@ footer a:not(.nav-link) {
   outline: none;
   box-shadow: none;
   background-color: transparent;
+  background-image: none;
+  padding: 0;
 }
+
+.form-floating>label {
+  left: unset;
+  right: 0;
+  padding: 1rem 0;
+  border: 0;
+}
+
