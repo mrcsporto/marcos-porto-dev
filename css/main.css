@@ -199,12 +199,6 @@ footer a:not(.nav-link) {
   }
 }
 
-/* Images Gallery Style*/
-
-/* .cc-effect {
-  border: 1px solid lightgray;
-} */
-
 .gallery .cc-porfolio-image figure {
   position: relative;
   overflow: hidden;
@@ -278,7 +272,7 @@ footer a:not(.nav-link) {
   opacity: 0;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 380px) {
   .gallery figure.cc-effect .h4 {
     font-size: 14px;
   }
@@ -404,13 +398,10 @@ footer a:not(.nav-link) {
   background-color: transparent;
   background-image: none;
   padding: 0;
-  right: 0;
 }
 
 .form-floating>label {
-  left: unset;
-  right: 0;
-  padding: 1rem 0;
+  padding: 1rem 0.75rem;
   border: 0;
 }
 
