@@ -405,3 +405,8 @@ footer a:not(.nav-link) {
   border: 0;
 }
 
+.form-select:focus {
+  border-color: none;
+  outline: 0;
+  box-shadow: none;
+}
