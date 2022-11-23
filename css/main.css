@@ -412,6 +412,10 @@ footer a:not(.nav-link) {
   box-shadow: none;
 }
 
+select#switch-lang {
+  width: max-content;
+}
+
 .porfolio-card {
   display: flex;
   flex-direction: column;
