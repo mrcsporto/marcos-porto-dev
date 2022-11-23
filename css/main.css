@@ -3,7 +3,8 @@
 /* Timeline custom component */
 
 html {
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+}
 
 .timeline {
   border-left: 2px solid #E6E9ED;
@@ -368,7 +369,7 @@ footer a:not(.nav-link) {
 }
 
 .icon-html5-alt {
-  color:  #e34c26;
+  color: #e34c26;
 }
 
 .icon-css3-alt {
@@ -409,4 +410,62 @@ footer a:not(.nav-link) {
   border-color: none;
   outline: 0;
   box-shadow: none;
+}
+
+.porfolio-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 145px;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 6px;
+  padding-top: 1rem;
+  padding-right: 1.5rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  border-color: rgba(208, 215, 222, 1);
+  border-width: 2px;
+  border-style: solid;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.porfolio-card:hover {
+  background-color: rgba(115, 163, 225, 0.25);
+  border-color: #4A89DC;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.porfolio-card .title {
+  max-width: 232px;
+  color: rgba(9, 105, 218, 1);
+  font-size: 14px;
+  line-height: 21px;
+  text-align: left;
+}
+
+.porfolio-card .description {
+  max-width: 382px;
+  margin-top: 14px;
+  color: rgba(87, 96, 106, 1);
+  font-size: 16px;
+  line-height: 18px;
+  text-align: left;
+}
+
+.porfolio-card .language {
+  display: flex;
+  flex-direction: row;
+  max-width: 46px;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 14px;
+}
+
+.porfolio-card .name {
+  max-width: 29px;
+  margin-left: 4px;
+  color: rgba(87, 96, 106, 1);
+  font-size: 11px;
+  text-align: left;
 }
