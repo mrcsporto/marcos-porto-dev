@@ -49,15 +49,15 @@ html {
 }
 
 .timeline-card-primary {
-  border-left-color: rgba(11, 43, 76, 0.855);
+  border-left-color: rgba(14, 27, 64, 0.92);
 }
 
 .timeline-card-primary:before {
-  border-color: #rgba(11, 43, 76, 0.855);
+  border-color: #rgba(14, 27, 64, 0.92);
 }
 
 .timeline-card-primary:after {
-  background-color: rgba(11, 43, 76, 0.855);
+  background-color: rgba(14, 27, 64, 0.92);
 }
 
 .timeline-card-success {
@@ -114,7 +114,7 @@ html {
 }
 
 .cover-bg {
-  background-color: rgba(11, 43, 76, 0.90);
+  background-color: #0e1b40eb;
   border-radius: 10px 10px 0 0;
 }
 
@@ -130,6 +130,7 @@ html {
 
 .avatar img {
   border-radius: 50%;
+  object-fit: cover;
 }
 
 footer a:not(.nav-link) {
@@ -304,11 +305,11 @@ footer a:not(.nav-link) {
 }
 
 .education-section .bg-custom {
-  background-color: rgba(11, 43, 76, 0.855);
+  background-color: rgba(14, 27, 64, 0.92);
 }
 
 .bg-skills {
-  background-color: rgba(11, 43, 76, 0.85);
+  background-color: rgba(14, 27, 64, 0.92)
 }
 
 .text-underline-hover {
@@ -401,6 +402,9 @@ select#switch-lang {
   font-size: 14px;
   line-height: 21px;
   text-align: left;
+}
+.porfolio-card .title:hover {
+  text-decoration: underline;
 }
 
 .porfolio-card .description {
