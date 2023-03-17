@@ -53,7 +53,7 @@ html {
 }
 
 .timeline-card-primary:before {
-  border-color: #rgba(14, 27, 64, 0.92);
+  border-color: rgba(14, 27, 64, 0.92);
 }
 
 .timeline-card-primary:after {
@@ -322,6 +322,10 @@ footer a:not(.nav-link) {
 
 .text-ruby {
   color: #bf251a;
+}
+
+.text-vue {
+  color: #42b883;
 }
 
 .icon-html5-alt {
