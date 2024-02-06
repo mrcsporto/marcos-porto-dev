@@ -324,6 +324,10 @@ footer a:not(.nav-link) {
   color: #bf251a;
 }
 
+.text-angular {
+  color: #dd1b16;
+}
+
 .text-vue {
   color: #42b883;
 }
