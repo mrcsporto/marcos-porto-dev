@@ -34,21 +34,27 @@
   <link target="_blank" href="css/bootstrap.min.css?ver=1.2.0" rel="stylesheet">
   <link target="_blank" href="css/aos.css?ver=1.2.0" rel="stylesheet">
   <link target="_blank" href="css/main.css?ver=1.2.0" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="jquery-3.6.0.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+
   <link rel="shortcut icon" target="_blank" href="images/favicon.ico" type="image/x-icon">
 </head>
 
 <body id="top" class="pt-2 px-1">
   <header>
-    <div class="container">
+    <div class="container mb-1">
       <div class="form-floating">
-        <select class="form-select" id="switch-lang">
-          <option value="en">🇺🇸 English</option>
-          <option value="pt">🇧🇷 Portuguese</option>
-        </select>
-        <label for="switch-lang" lang="en">Language:</label>
-        <label for="switch-lang" lang="pt">Idioma:</label>
+        <div class="select-container">
+          <select class="form-select" id="switch-lang">
+            <option value="en" data-icon="flag-icon flag-icon-us">English</option>
+            <option value="pt" data-icon="flag-icon flag-icon-br">Portuguese</option>
+          </select>
+        </div>
       </div>
     </div>
   </header>
@@ -96,9 +102,9 @@
               </div>
               <div data-aos="fade-left" data-aos-delay="200">
                 <a class="btn btn-primary shadow-sm mt-1 me-1" lang="en" target="_blank" href="public/marcos-porto-resume-EN.pdf"
-                  target="_blank">Download Currículo</a>
-                <a class="btn btn-primary shadow-sm mt-1 me-1" lang="pt" target="_blank" href="public/marcos-porto-resume-PT.pdf"
                   target="_blank">Download Resume</a>
+                <a class="btn btn-primary shadow-sm mt-1 me-1" lang="pt" target="_blank" href="public/marcos-porto-resume-PT.pdf"
+                  target="_blank">Download Currículo</a>
               </div>
             </div>
           </div>
@@ -622,6 +628,47 @@
       $('[lang="pt"]').toggle();
       $('[lang="en"]').toggle();
     });
+    
+    $(document).ready(function() {
+      $('#switch-lang').select2({
+        templateResult: formatOption
+      });
+    });
+    
+    function updateFlagIcon() {
+      var selectedOption = $('#switch-lang option:selected');
+      var iconClass = selectedOption.data('icon');
+
+      $('#select2-switch-lang-container .selected-flag-icon').remove();
+
+      var flagElement = $('<span class="flag-icon ' + iconClass + ' selected-flag-icon"></span>');
+      $('#select2-switch-lang-container').prepend(flagElement);
+    }
+
+    $(document).ready(function() {
+      updateFlagIcon();
+
+      $('#switch-lang').on('change', updateFlagIcon);
+    });
+
+
+    function formatOption(option) {
+      if (!option.id) {
+        return option.text;
+      }
+
+      var iconClass = $(option.element).data('icon');
+      var $option = $(
+        '<span><span class="' + iconClass + '"></span> ' + option.text + '</span>'
+      );
+
+      if ($(option.element).is(':selected')) {
+        $option.addClass('selected');
+      }
+
+      return $option;
+    }
+    
   </script>
 </body>
 

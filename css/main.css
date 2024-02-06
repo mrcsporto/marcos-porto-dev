@@ -440,3 +440,31 @@ select#switch-lang {
   font-size: 11px;
   text-align: left;
 }
+
+.select-container {
+  position: relative;
+  display: inline-block;
+}
+
+.form-floating label {
+  margin-right: 10px;
+}
+
+.form-select {
+  padding-left: 60px;
+}
+
+.form-select option {
+  padding-left: 30px;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 5px center;
+}
+
+.selected-flag-icon {
+  margin-right: 10px;
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
