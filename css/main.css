@@ -476,3 +476,54 @@ select#switch-lang {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+.skill-card {
+  display: flex;
+  align-items: center;
+  background-color: #f8f9fa;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding: 15px;
+  transition: transform 0.3s;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+}
+
+.skill-icon {
+  font-size: 2rem;
+  margin-right: 15px;
+}
+
+.skill-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.custom-btn {
+  background-color: #3e55c9;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.custom-btn:hover {
+  background-color: #3e55c98c;
+  transform: translateY(-2px);
+  color: #fff;
+}
+
+.custom-btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+  color: #fff;
+}
