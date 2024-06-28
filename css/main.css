@@ -7,13 +7,13 @@ html {
 }
 
 .timeline {
-  border-left: 2px solid #E6E9ED;
+  border-left: 2px solid #e6e9ed;
   padding: 1rem 0;
 }
 
 .timeline-card {
   position: relative;
-  margin-left: 31px;
+  margin-left: 15px;
   border-left: 2px solid;
   margin-bottom: 2rem;
 }
@@ -23,7 +23,7 @@ html {
 }
 
 .timeline-card:before {
-  content: '';
+  content: "";
   display: inline-block;
   position: absolute;
   background-color: #fff;
@@ -31,20 +31,20 @@ html {
   width: 12px;
   height: 12px;
   top: 20px;
-  left: -41px;
+  left: -24px;
   border: 2px solid;
   z-index: 2;
 }
 
 .timeline-card:after {
-  content: '';
+  content: "";
   display: inline-block;
   position: absolute;
   background-color: currentColor;
-  width: 29px;
+  width: 15px;
   height: 2px;
   top: 25px;
-  left: -29px;
+  left: -15px;
   z-index: 1;
 }
 
@@ -61,15 +61,15 @@ html {
 }
 
 .timeline-card-success {
-  border-left-color: #37BC9B;
+  border-left-color: #37bc9b;
 }
 
 .timeline-card-success:before {
-  border-color: #37BC9B;
+  border-color: #37bc9b;
 }
 
 .timeline-card-success:after {
-  background-color: #37BC9B;
+  background-color: #37bc9b;
 }
 
 html {
@@ -104,8 +104,7 @@ html {
   color: rgb(255, 255, 255);
 }
 
-
-.nav-item+.nav-item {
+.nav-item + .nav-item {
   margin-left: 1rem;
 }
 
@@ -176,7 +175,7 @@ footer a:not(.nav-link) {
 }
 
 .gallery .cc-portfolio-image figure figcaption,
-.gallery .cc-portfolio-image figure figcaption>a {
+.gallery .cc-portfolio-image figure figcaption > a {
   position: absolute;
   top: 0;
   left: 0;
@@ -184,7 +183,7 @@ footer a:not(.nav-link) {
   height: 100%;
 }
 
-.gallery .cc-portfolio-image figure figcaption>a {
+.gallery .cc-portfolio-image figure figcaption > a {
   z-index: 1000;
   text-indent: 200%;
   white-space: nowrap;
@@ -200,7 +199,7 @@ footer a:not(.nav-link) {
 .gallery figure.cc-effect figcaption::before,
 .gallery figure.cc-effect figcaption::after {
   position: absolute;
-  content: '';
+  content: "";
   opacity: 0;
 }
 
@@ -232,7 +231,6 @@ footer a:not(.nav-link) {
   .gallery figure.cc-effect .h4 {
     font-size: 14px;
   }
-
 }
 
 .gallery figcaption .container {
@@ -309,7 +307,7 @@ footer a:not(.nav-link) {
 }
 
 .bg-skills {
-  background-color: rgba(14, 27, 64, 0.92)
+  background-color: rgba(14, 27, 64, 0.92);
 }
 
 .text-underline-hover {
@@ -365,7 +363,7 @@ footer a:not(.nav-link) {
   padding: 0;
 }
 
-.form-floating>label {
+.form-floating > label {
   padding: 1rem 0.75rem;
   border: 0;
 }
@@ -383,7 +381,7 @@ select#switch-lang {
 .portfolio-card {
   display: flex;
   flex-direction: column;
-  min-height: 145px;
+  min-height: 160px;
   justify-content: center;
   align-items: flex-start;
   border-radius: 6px;
@@ -399,7 +397,7 @@ select#switch-lang {
 
 .portfolio-card:hover {
   background-color: rgba(115, 163, 225, 0.25);
-  border-color: #4A89DC;
+  border-color: #4a89dc;
   /* cursor: pointer; */
   transition: 0.25s;
 }
@@ -412,6 +410,7 @@ select#switch-lang {
   text-align: left;
   width: 100%;
 }
+
 .portfolio-card .title:hover {
   text-decoration: underline;
 }
@@ -526,4 +525,82 @@ select#switch-lang {
   outline: none;
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
   color: #fff;
+}
+
+.custom-gap {
+  padding: 5px !important;
+}
+
+.print-only {
+  display: none !important;
+}
+
+@media print {
+  @page {
+    size: A3 portrait;
+    margin: 0 auto;
+  }
+
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  
+  .skills-section {
+    padding: 20px;
+  }
+
+  .card {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+
+  .not-visible {
+    visibility: hidden;
+  }
+  
+  .no-print {
+    display: none;
+  }
+  
+  .print-only {
+    display: block !important;
+  }
+
+  .container {
+    width: 100vw;
+    margin: 0 auto;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+
+  .bg-white {
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+
+  .shadow-lg {
+    box-shadow: none !important;
+  }
+
+  .rounded-3 {
+    border-radius: 0 !important;
+  }
+  
+  .page-break {
+    page-break-before: always;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .container {
+      display: none;
+    }
+  }
+  
+  @media only screen and (min-width: 769px) {
+    .container {
+      display: block;
+    }
+}
+
 }

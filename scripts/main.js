@@ -41,40 +41,40 @@ const portfolioItems = [
     badgeText: "Projeto Real",
     badgeClass: "bg-success"
   },
-  {
-    title: "Bank Account ATM Machine",
-    url: "https://github.com/mrcsporto/atm-case",
-    description: "Aplicativo desenvolvido para simular a gestão de uma conta bancária e suas respectivas transações financeiras. Este aplicativo permite aos usuários visualizar e gerenciar depósitos, saques, transferências e outras operações bancárias de forma intuitiva e segura, proporcionando uma experiência realística do gerenciamento de contas bancárias.",
-    languageIcon: "icon-ruby",
-    languageName: "Ruby",
-    badgeText: "Projeto Estudo",
-    badgeClass: "bg-primary"
-  },
-  {
-    title: "Programming Community Forum",
-    url: "https://github.com/mrcsporto/forum-on-rails",
-    description: "Comunidade brasileira sobre desenvolvimento de software, que simula um espaço para profissionais e entusiastas da área trocarem conhecimentos, experiências e discutirem as últimas tendências e tecnologias do setor.",
-    languageIcon: "icon-ruby",
-    languageName: "Ruby",
-    badgeText: "Projeto Estudo",
-    badgeClass: "bg-primary"
-  },
-  {
-    title: "Inventory Control System API",
-    url: "https://github.com/mrcsporto/factory-api-v1",
-    description: "API REST pública simulada para gerenciar produtos, centros de inventário e pedidos. O projeto é um objeto de estudo de caso para explorar como APIs funcionam na prática, permitindo operações de CRUD (Criar, Ler, Atualizar, Deletar) em produtos, controle de estoque em vários centros e gestão de pedidos.",
-    languageIcon: "icon-ruby",
-    languageName: "Ruby",
-    badgeText: "Projeto Estudo",
-    badgeClass: "bg-primary"
-  },
-  {
-    title: "Tic-Tac-Toe Game",
-    url: "https://mrcsporto.github.io/tic-tac-toe/",
-    description: "Este projeto envolve o desenvolvimento de um jogo de 'Tic-tac-toe' (Jogo da Velha) projetado para ser jogado por dois jogadores no mesmo computador. A implementação se concentra em oferecer uma interface de usuário simples e intuitiva, garantindo uma experiência de jogo fluida e agradável.",
-    languageIcon: "icon-javascript-alt",
-    languageName: "Javascript",
-    badgeText: "Projeto Estudo",
-    badgeClass: "bg-primary"
-  }
+  // {
+  //   title: "Bank Account ATM Machine",
+  //   url: "https://github.com/mrcsporto/atm-case",
+  //   description: "Aplicativo desenvolvido para simular a gestão de uma conta bancária e suas respectivas transações financeiras. Este aplicativo permite aos usuários visualizar e gerenciar depósitos, saques, transferências e outras operações bancárias de forma intuitiva e segura, proporcionando uma experiência realística do gerenciamento de contas bancárias.",
+  //   languageIcon: "icon-ruby",
+  //   languageName: "Ruby",
+  //   badgeText: "Projeto Estudo",
+  //   badgeClass: "bg-primary"
+  // },
+  // {
+  //   title: "Programming Community Forum",
+  //   url: "https://github.com/mrcsporto/forum-on-rails",
+  //   description: "Comunidade brasileira sobre desenvolvimento de software, que simula um espaço para profissionais e entusiastas da área trocarem conhecimentos, experiências e discutirem as últimas tendências e tecnologias do setor.",
+  //   languageIcon: "icon-ruby",
+  //   languageName: "Ruby",
+  //   badgeText: "Projeto Estudo",
+  //   badgeClass: "bg-primary"
+  // },
+  // {
+  //   title: "Inventory Control System API",
+  //   url: "https://github.com/mrcsporto/factory-api-v1",
+  //   description: "API REST pública simulada para gerenciar produtos, centros de inventário e pedidos. O projeto é um objeto de estudo de caso para explorar como APIs funcionam na prática, permitindo operações de CRUD (Criar, Ler, Atualizar, Deletar) em produtos, controle de estoque em vários centros e gestão de pedidos.",
+  //   languageIcon: "icon-ruby",
+  //   languageName: "Ruby",
+  //   badgeText: "Projeto Estudo",
+  //   badgeClass: "bg-primary"
+  // },
+  // {
+  //   title: "Tic-Tac-Toe Game",
+  //   url: "https://mrcsporto.github.io/tic-tac-toe/",
+  //   description: "Este projeto envolve o desenvolvimento de um jogo de 'Tic-tac-toe' (Jogo da Velha) projetado para ser jogado por dois jogadores no mesmo computador. A implementação se concentra em oferecer uma interface de usuário simples e intuitiva, garantindo uma experiência de jogo fluida e agradável.",
+  //   languageIcon: "icon-javascript-alt",
+  //   languageName: "Javascript",
+  //   badgeText: "Projeto Estudo",
+  //   badgeClass: "bg-primary"
+  // }
 ];
