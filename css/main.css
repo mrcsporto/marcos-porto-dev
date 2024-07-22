@@ -490,6 +490,11 @@ select#switch-lang {
   transform: scale(1.05);
 }
 
+.skill-card:hover {
+  background-color: rgba(115, 163, 225, 0.25);
+  border-color: #4a89dc;
+}
+
 .skill-icon {
   font-size: 2rem;
   margin-right: 15px;
