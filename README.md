@@ -34,3 +34,4 @@
 <a href="https://github.com/mrcsporto/etiquetas-fortaleza"><img width="300em" src="https://github-readme-stats.vercel.app/api/pin/?username=mrcsporto&repo=etiquetas-fortaleza&theme=tokyonight"/></a> 
 <a href="https://github.com/mrcsporto/card-grid-template"><img width="300em" src="https://github-readme-stats.vercel.app/api/pin/?username=mrcsporto&repo=card-grid-template&theme=tokyonight"/></a>  
 </div>
+
