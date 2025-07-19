@@ -16,7 +16,7 @@ const portfolioItems = [
   {
     title: "Casa da Criança e do Adolescente",
     url: "https://cca.sps.ce.gov.br/",
-    description: "Sistema web (Python + Angular) da SPS/CE para gestão de atendimentos a crianças e adolescentes vítimas de violência, integrando órgãos como MP, TJ, Defensoria e Conselhos.",
+    description: "Sistema web desenvolvido com Python (backend) e Angular (frontend) para a Secretaria de Proteção Social do Ceará (SPS/CE), voltado para a gestão de atendimentos a crianças e adolescentes vítimas de violência.",
     icons: ["devicon-python-plain colored", "devicon-angularjs-plain colored"],
     badgeText: "Governamental",
     badgeClass: "bg-primary"
