@@ -393,6 +393,7 @@ select#switch-lang {
   border-width: 2px;
   border-style: solid;
   background-color: rgba(255, 255, 255, 1);
+  gap: 1rem;
 }
 
 .portfolio-card:hover {
@@ -405,10 +406,12 @@ select#switch-lang {
 .portfolio-card .title {
   max-width: 232px;
   color: rgba(9, 105, 218, 1);
-  font-size: 14px;
-  line-height: 21px;
-  text-align: left;
-  width: 100%;
+  font-size: 1rem;
+  line-height: 1.4;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .portfolio-card .title:hover {
@@ -418,7 +421,6 @@ select#switch-lang {
 .portfolio-card .description {
   max-width: 382px;
   width: 100%;
-  margin-top: 14px;
   color: rgba(87, 96, 106, 1);
   font-size: 16px;
   line-height: 18px;
@@ -476,33 +478,35 @@ select#switch-lang {
   white-space: nowrap;
 }
 
-.skill-card {
-  display: flex;
-  align-items: center;
-  background-color: #f8f9fa;
-  border: 1px solid #e0e0e0;
-  border-radius: 5px;
-  padding: 15px;
-  transition: transform 0.3s;
+.skills-card {
+  background: linear-gradient(135deg, #f8f9fa, #ffffff);
+  border: none;
+  transition: all 0.3s ease;
+  border-radius: 1rem;
 }
 
-.skill-card:hover {
-  transform: scale(1.05);
+.skills-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
 }
 
-.skill-card:hover {
-  background-color: rgba(115, 163, 225, 0.25);
-  border-color: #4a89dc;
+.skills-card h5 {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: #2c3e50;
+  margin-bottom: 1rem;
 }
 
-.skill-icon {
-  font-size: 2rem;
-  margin-right: 15px;
+.skills-card i {
+  font-size: 2.8rem;
+  opacity: 0.8;
+  transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-.skill-name {
-  font-size: 1.2rem;
-  font-weight: bold;
+.skills-card i:hover {
+  transform: scale(1.12);
+  opacity: 1;
+  cursor: pointer;
 }
 
 .custom-btn {
