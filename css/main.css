@@ -583,7 +583,6 @@ select#switch-lang {
 
   .bg-white {
     box-shadow: none;
-    border: 1px solid #ddd;
   }
 
   .shadow-lg {
@@ -596,17 +595,35 @@ select#switch-lang {
   
   .page-break {
     page-break-before: always;
+    break-before: page;
+  }
+  
+  .timeline {
+    border-left: none !important;
+    padding: 0 !important;
+  }
+
+  .timeline-card {
+    border-left: none !important;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    position: static !important;
+  }
+
+  .timeline-card:before,
+  .timeline-card:after {
+    display: none !important;
   }
 
   @media only screen and (max-width: 768px) {
     .container {
       display: none;
     }
-  }
-  
-  @media only screen and (min-width: 769px) {
-    .container {
-      display: block;
+    
+    .cover-bg {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      min-height: auto;
     }
   }
   
@@ -619,5 +636,4 @@ select#switch-lang {
       animation: none !important;
     }
   }
-
 }

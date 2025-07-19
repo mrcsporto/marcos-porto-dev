@@ -51,7 +51,7 @@
 
 <body id="top" class="pt-2 px-1 bg-white">
   <header>
-    <div class="container mb-1 no-print">
+    <div class="container mb-1 not-visible no-print">
       <div class="form-floating">
         <div class="select-container">
           <select class="form-select" id="switch-lang">
@@ -68,7 +68,7 @@
         <div class="text-white cover-bg p-2">
           <div class= "text-center text-lg-left">
             <div class="clearfix">
-              <div class="site-nav not-visible">
+              <div class="site-nav not-visible no-print">
                 <nav role="navigation">
                   <ul class="nav justify-content-center flex-wrap">
                     <li class="nav-item hover-effect">
@@ -125,7 +125,7 @@
                   <strong class="text-vue fs-2"><em class="fab fa-vuejs"></em><span class="me-1"></span></strong>
                 </div>
               </div>
-              <div class="no-print" data-aos="fade-left" data-aos-delay="200">
+              <div class="no-print not-visible" data-aos="fade-left" data-aos-delay="200">
                 <a class="btn btn-outline-light shadow-sm" lang="en" onclick="printPage()"><i class="fas fa-download me-1"></i>Download Resume</a>
                 <a class="btn btn-outline-light shadow-sm" lang="pt" onclick="printPage()"><i class="fas fa-download me-1"></i>Download Currículo</a>
               </div>
@@ -133,8 +133,8 @@
           </div>
         </div>
         <div class="about-section pt-4 px-3 px-lg-4 mt-1">
-          <h2 class="h3 mb-3" lang="en">About Me</h2>
-          <h2 class="h3 mb-3" lang="pt">Sobre mim</h2>
+          <h2 class="h3 mb-2 mb-lg-3" lang="en">About Me</h2>
+          <h2 class="h3 mb-2 mb-lg-3" lang="pt">Sobre mim</h2>
           <p class="text-muted fs-6 fw-normal" lang="en">I'm a Full-stack Ruby on Rails and JavaScript developer with a background
             in Supply Chain.
             Graduated in
@@ -154,10 +154,10 @@
           </p>
         </div>
       </div>
-      <hr class="mt-3" />
+      <hr class="mt-1 mt-lg-3" />
       <section class="skills-section px-3 px-lg-4">
-        <h2 class="h3 mb-3" lang="en">Professional Skills</h2>
-        <h2 class="h3 mb-3" lang="pt">Habilidades Profissionais</h2>
+        <h2 class="h3 mb-2 mb-lg-3" lang="en">Professional Skills</h2>
+        <h2 class="h3 mb-2 mb-lg-3" lang="pt">Habilidades Profissionais</h2>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 column-g-4">
           <div class="col-auto col-md-12">
             <div class="card skills-card text-center p-2 shadow-sm border border-light">
@@ -205,12 +205,12 @@
         </div>
       </section>
 
-      <hr class="mt-3" />
+      <hr class="mt-1 mt-lg-3 page-break" />
       <div class="section" id="portfolio">
         <div class="container">
           <div class="row">
             <div class="skills-section px-1 px-lg-4">
-              <h2 class="h3 mb-3">Portfolio</h2>
+              <h2 class="h3 mb-2 mb-lg-3">Portfolio</h2>
               <div class="tab-content gallery">
                 <div class="tab-pane active" id="web-development">
                   <div class="ml-auto mr-auto">
@@ -224,13 +224,13 @@
                 </div>
               </div>
             </div>
-            <hr class="mt-3" />
+            <hr class="mt-1 mt-lg-3 page-break" />
             <div class="work-experience-section px-1 px-lg-4">
-              <h2 class="h3 mb-3 ms-2" lang="en">Work Experience</h2>
-              <h2 class="h3 mb-3 ms-2" lang="pt">Experiências Profissionais</h2>
+              <h2 class="h3 mb-2 mb-lg-3 ms-2" lang="en">Work Experience</h2>
+              <h2 class="h3 mb-2 mb-lg-3 ms-2" lang="pt">Experiências Profissionais</h2>
               <div class="timeline">
                 <div class="timeline-card timeline-card-primary card shadow-sm">
-                  <div class="card-body px-2" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                  <div class="card-body py-2 py-lg-3 px-2" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
                     <div class="h5 mb-1" lang="en">Full-stack Developer <span class="text-muted h6">at <a
                           class="text-muted text-underline-hover" target="_blank"
                           href="https://www.vicegov.ce.gov.br/">Vice-Governadoria do Estado do Ceará</a></span>
@@ -259,7 +259,7 @@
                   </div>
                 </div>
                 <div class="timeline-card timeline-card-primary card shadow-sm">
-                  <div class="card-body px-2" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                  <div class="card-body py-2 py-lg-3 px-2" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
                     <div class="h5 mb-1" lang="en">Full-stack Developer <span class="text-muted h6">at <a
                           class="text-muted text-underline-hover" target="_blank"
                           href="https://compreup.com.br/">CompreUP</a></span>
@@ -268,8 +268,8 @@
                           class="text-muted text-underline-hover" target="_blank"
                           href="https://compreup.com.br/">CompreUP</a></span>
                     </div>
-                    <div class="text-muted text-small mb-2" lang="en">Out 2023 - Until now</div>
-                    <div class="text-muted text-small mb-2" lang="pt">Out 2023 - Até o momento</div>
+                    <div class="text-muted text-small mb-2" lang="en">Out 2023 - Maio - 2025 </div>
+                    <div class="text-muted text-small mb-2" lang="pt">Out 2023 - Maio - 2025</div>
                     <div lang="en">
                       As a Full-stack Developer, I lead the complete restructuring of the front-end using AngularJS,
                       significantly improving responsiveness and user experience. Concurrently, I am spearheading the
@@ -286,13 +286,12 @@
                       frente da migração e remodelação da arquitetura de back-end de Php Laravel para Ruby on Rails,
                       otimizando a eficiência operacional e a escalabilidade do sistema. Além de implementar novas
                       funcionalidades e realizar manutenções cruciais, também assumo a liderança do time de
-                      desenvolvedores, orientando-os em práticas avançadas de desenvolvimento e fomentando um ambiente
-                      colaborativo.
+                      desenvolvedores.
                     </div>
                   </div>
                 </div>
                 <div class="timeline-card timeline-card-primary card shadow-sm">
-                  <div class="card-body px-2" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                  <div class="card-body py-2 py-lg-3 px-2" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
                     <div class="h5 mb-1" lang="en">Back-end Developer <span class="text-muted h6">at <a
                           class="text-muted text-underline-hover" target="_blank"
                           href="https://compreup.com.br/">Intersol</a></span>
@@ -320,7 +319,7 @@
                   </div>
                 </div>
                 <div class="timeline-card timeline-card-primary card shadow-sm">
-                  <div class="card-body px-2" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                  <div class="card-body py-2 py-lg-3 px-2" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
                     <div class="h5 mb-1" lang="en">Co-founder and Front-end Developer <span class="text-muted h6">at <a
                           class="text-muted text-underline-hover" target="_blank"
                           href="https://bestcontent.ai/pt">BestContent
@@ -345,10 +344,10 @@
                 </div>
               </div>
             </div>
-            <hr class="mt-3" />
+            <hr class="mt-1 mt-lg-3 page-break" />
             <div class="education-section px-1 px-lg-4 pb-4">
-              <div class="h3 mb-3" lang="en">Education</div>
-              <div class="h3 mb-3" lang="pt">Educação</div>
+              <div class="h3 mb-2 mb-lg-3" lang="en">Education</div>
+              <div class="h3 mb-2 mb-lg-3" lang="pt">Educação</div>
               <div class="card mb-3 overflow-hidden">
                 <div class="row">
                   <div class="col-md-3 bg-custom" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
@@ -359,7 +358,7 @@
                     </div>
                   </div>
                   <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                    <div class="card-body px-2">
+                    <div class="card-body pt-1 pt-lg-3 pb-0 pb-lg-3 px-2">
                       <h5 class="h5" lang="en">Systems Analysis</h5>
                       <h5 class="h5" lang="pt">Análise de Sistemas</h5>
                       <p class="category"><span><a class="text-muted text-underline-hover" target="_blank"
@@ -392,7 +391,7 @@
                     </div>
                   </div>
                   <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                    <div class="card-body px-2">
+                    <div class="card-body pt-1 pt-lg-3 pb-0 pb-lg-3 px-2">
                       <h5 class="h5" lang="en">Full-stack Development</h5>
                       <h5 class="h5" lang="pt">Desenvolvimento Full-stack</h5>
                       <p class="category"><span><a class="text-muted text-underline-hover" target="_blank"
@@ -427,7 +426,7 @@
                     </div>
                   </div>
                   <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                    <div class="card-body px-2">
+                    <div class="card-body pt-1 pt-lg-3 pb-0 pb-lg-3 px-2">
                       <h5 class="h5" lang="en">Master of Operation Management</h5>
                       <h5 class="h5" lang="pt">Gestão de Operações</h5>
                       <p class="category"><span><a class="text-muted text-underline-hover" target="_blank"
@@ -454,7 +453,7 @@
                     </div>
                   </div>
                   <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
-                    <div class="card-body px-2">
+                    <div class="card-body pt-1 pt-lg-3 pb-0 pb-lg-3 px-2">
                       <h5 class="h5" lang="en">Bachelor of Production Engineer</h5>
                       <h5 class="h5" lang="pt">Engenharia de Produção</h5>
                       <p class="category"><span><a class="text-muted text-underline-hover" target="_blank"
@@ -624,12 +623,12 @@
           `;
         lastRow.appendChild(colNormal);
 
-        if (index < 4) {
+        if (index < 6) {
           const colPrint = document.createElement('div');
           colPrint.className = 'col-lg-6 col-md-6 col-sm-12 px-0 custom-gap print-only';
           colPrint.innerHTML = `
             <div class="card rounded">
-              <div class="card-body px-2" style="min-height: 325px;">
+              <div class="card-body px-2" style="min-height: 250px;">
                 <h5 class="card-title">${item.title}</h5>
                 <p class="card-text">${item.description}</p>
               </div>
