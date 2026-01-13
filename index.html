@@ -559,11 +559,14 @@
   <script src="scripts/lang.js"></script>
 
   <script>
+    let currentLang = 'pt';
     $('[lang="en"]').hide();
 
     $('#switch-lang').change(function () {
+      currentLang = $(this).val();
       $('[lang="en"]').toggle();
       $('[lang="pt"]').toggle();
+      renderPortfolio(true);
     });
 
     $(document).ready(function () {
@@ -605,31 +608,43 @@
 
       return $option;
     }
-
+    
     function toggleDescription(id) {
-      var container = document.getElementById(id);
-      var element = container.querySelector('p');
-      var button = container.querySelector('a');
+      const container = document.getElementById(id);
+      const element = container.querySelector('p');
+      const button = container.querySelector('a');
+
+      const labels = {
+        pt: {
+          more: 'Ver mais',
+          less: 'Ver menos'
+        },
+        en: {
+          more: 'See more',
+          less: 'See less'
+        }
+      };
 
       if (container.classList.contains('expanded')) {
         element.style.overflow = 'hidden';
         element.style.whiteSpace = 'nowrap';
         element.style.maxHeight = '3.6em';
-        button.textContent = 'Ver mais';
+        button.textContent = labels[currentLang].more;
         container.classList.remove('expanded');
       } else {
         element.style.overflow = 'visible';
         element.style.whiteSpace = 'normal';
         element.style.maxHeight = 'none';
-        button.textContent = 'Ver menos';
+        button.textContent = labels[currentLang].less;
         container.classList.add('expanded');
       }
     }
 
-
-
-    function renderPortfolio() {
+    function renderPortfolio(reset = false) {
       const container = document.getElementById('portfolioContainer');
+
+      if (reset) container.innerHTML = '';
+
       portfolioItems.forEach((item, index) => {
         if (index % 2 === 0) {
           const row = document.createElement('div');
@@ -641,27 +656,27 @@
 
         const colNormal = document.createElement('div');
         colNormal.className = 'col-12 col-md-6 px-0 custom-gap no-print not-visible';
+
         colNormal.innerHTML = `
           <div class="text-muted text-decoration-none">
             <div class="portfolio-card mb-1 card-body position-relative shadow-sm">
-              <a target="_blank" href="${item.url}" class="title d-block fw-semibold text-truncate"
-                data-aos="fade-right" data-aos-offset="50" data-aos-duration="500" title="${item.title}">
+              <a target="_blank" href="${item.url}" class="title d-block fw-semibold text-truncate">
                 ${item.title}
               </a>
 
-              <div class="description" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500"
-                id="description${index}">
+              <div class="description" id="description${index}">
                 <p class="mb-0 text-body custom-text">
-                  ${item.description}
+                  ${item.description[currentLang]}
                 </p>
-                <a class="btn btn-link p-0 text-muted small text-muted mt-1" onclick="toggleDescription('description${index}')">
-                  Ver mais
+                <a class="btn btn-link p-0 text-muted small mt-1"
+                  onclick="toggleDescription('description${index}')">
+                  ${currentLang === 'pt' ? 'Ver mais' : 'See more'}
                 </a>
               </div>
 
               <div class="d-flex justify-content-between align-items-center w-100">
                 <div class="d-flex gap-1 flex-wrap">
-                  ${item.icons.map(icon => `<i class="${icon} icons-languages" style="font-size: 1.4rem;"></i>`).join('')}
+                  ${item.icons.map(icon => `<i class="${icon} icons-languages"></i>`).join('')}
                 </div>
                 <span class="badge rounded-pill ${item.badgeClass} fw-normal px-2">
                   ${item.badgeText}
@@ -669,23 +684,11 @@
               </div>
             </div>
           </div>
-          `;
-        lastRow.appendChild(colNormal);
+        `;
 
-        if (index < 6) {
-          const colPrint = document.createElement('div');
-          colPrint.className = 'col-lg-6 col-md-6 col-sm-12 px-0 custom-gap print-only';
-          colPrint.innerHTML = `
-            <div class="card rounded">
-              <div class="card-body px-2" style="min-height: 250px;">
-                <h5 class="card-title">${item.title}</h5>
-                <p class="card-text">${item.description}</p>
-              </div>
-            </div>
-          `;
-          lastRow.appendChild(colPrint);
-        }
+        lastRow.appendChild(colNormal);
       });
+
       AOS.refresh();
     }
 
